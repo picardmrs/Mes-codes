@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab-btn{
+            display: inline-block;
+            border: 2px solid black;
+            background-color: black;
+            position:relative;
+            border-radius: 5px;
+            color: aliceblue;
+            width:40px;
+        }
+        .shift.tab-btn{
+            width: 45px;
+        }
+        img{
+            height: 200px;
+        }
+        italic{
+            font-style: italic;
+        }
+        footer{
+            border-top: 2px dashed gray;
+            margin-left: 20px;
+            font-size: 15px;
+            display: flex;
+            align-items:flex-end;
+            justify-content:space-evenly;
+        }
+        section{
+            width: 50%;
+        }
+
+        nav{
+            ul{list-style: none;}   
+            a{
+                &:focus{
+                    /* display : block; */
+                    position:static;
+                }            
+                position: absolute; 
+                left: -100em;
+            }
+        }
+
+        section.right{
+            width: 50%;
+            position:relative
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#main">head page</a></li>
+            <li><a href="#footer">foot page</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>L'accesibilité</h1>
+        <h2>La navigation</h2>
+        <p>Appuyez sur <span class = "tab-btn">↹</span> pour naviguer, et découvrir le menu d'accessibilité caché. L'utilisation de <span class = "shift tab-btn">⇧ + ↹ </span> permet de revenir en arrière.</p>
+        <p>On pourrait se demander pourquoi on aura préféré la balise `nav` à celle de `menu`. On consultera avec profit la documentation.</p>
+        <p>Deux sites présentés comme réference en terme d'accessibilité: <a href="https://snacknation.com">SnackNation.com</a>, ou encore le site du gouvernement du <a href="ru.fr">Royaume-Uni</a>. Le <a href="service-public.fr">service-public.fr</a> n'en reste qu'à une promesse superficielle.</p>
+        <h2>Le cas des images</h2>
+        <p>Par exemple, la RGAA définit avec bon sens que les images purement illustatives ne devraient définir qu'un texte alternatif vide. On retrouvera la vérification de ces élèments notamment dans le <italic>Test 1.9.1.</italic></p>
+        <img src="https://rue89bordeaux.com/wp-content/uploads/2019/11/dupire.jpg" alt="">
+        <h2>Les sources</h2>
+        <p>La politique et les régles de l'accessibilité sont définies par l'état français, via le <a href="https://accessibilite.numerique.gouv.fr/">RGAA</a></p>>    
+        <p>L'ensemble des critères sont formalisés par des <a href = "http://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/">critères de test</a>. La validation de ces critères peut-être falicitée par ces outils: </p>
+        <ul>
+                    <li><a href="https://chromewebstore.google.com/detail/assistant-rgaa/cgpmofepeeiaaljkcclfldhaalfpcand?hl=fr">Assistant RGAA</a></li>   
+                    <li><a href="https://chromewebstore.google.com/detail/lets-get-color-blind/bkdgdianpkfahpkmphgehigalpighjck?hl=fr">Let's get color blind</a></li> 
+                    <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/">AInspector for WCAG Accessibility Evaluation</a></li> 
+        </ul>
+        <p>N'oubliez pas d'installer <a href="https://www.nvda.fr/">NVDA</a> pour vos tests.</p>
+    </main>
+
+    <footer>
+        <section>
+        <h3>Remerciements</h3>
+            <p>Ce contenu a été conçu avec les aimables conseils de votre <span lang="ja">先輩</span>, <a href="mailto:paul.villedieu@ecole.ensicaen.fr">Paul Villedieu</a>, spécialiste de la <em>conformité en matière d'accessibilité</em>.</p>
+        </section>
+        <section class="right">
+            <p>Pour découvrir l'approche "mobile first" pour construire un site adaptatif (responsive), rendez-vous à la <a href="08-mobile-first.html" rel="next">page suivante</a>.</p>
+        </sectionsection class="right">
+    </footer>
+</body>
+</html>

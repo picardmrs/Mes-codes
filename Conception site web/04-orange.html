@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'orange</title>
+    <style>
+        main {
+            margin: 5px;
+            margin-bottom: 55px;
+        }
+        /* L'animation de l'orange */
+        @keyframes rot {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .orange {
+            /* Décommentez pour l'animation */
+            animation: rot 5s infinite;
+            transform-origin: 75px calc(75px + 15px); 
+            border: 2px solid salmon;
+        }
+        /*****/
+        /* L'oange seule */
+        .orange {
+            --orange-diameter: 150px;
+            width: var(--orange-diameter);
+            height: calc(var(--orange-diameter) + 15px);
+            position: relative;
+            .pelure {
+                width: var(--orange-diameter);
+                height: var(--orange-diameter);
+                border-radius: 50%;
+                position: absolute;
+                bottom: 0;
+                &.texture {
+                    box-sizing: border-box;
+                    background: radial-gradient(darkgoldenrod 10%, #ffa500 20%);
+                    background-size: 5px 5px;
+                    border: 2px solid darkgoldenrod;
+                    box-shadow: inset 10px -10px 7px 5px rgb(184, 134, 11, 0.9);
+                }
+            }
+            .feuille {
+                width: 70px;
+                height: 40px;
+                position: absolute;
+                right: 10px;
+                top: 0;
+                z-index: 1;
+                border-top-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                &.texture{
+                    background: linear-gradient(to bottom right, darkgreen 50%, green 50%);
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>L'orange!</h1>
+        <section>
+            <p>Une page posséde souvent plus qu'un simple contenu. On y ajoute par exemple une barre de navigation, des informations de contacts, etc. Il convient de séparer ces élèments du contenu principal et propre de la page. On le fait via `main`.</p>
+            <div class="orange">
+                <div class="feuille texture"></div>
+                <div class="pelure texture"></div>
+            </div>
+            <!-- mon commentaire inutile -->
+        </section>
+    </main>
+    <p>
+        Rendez-vous maintenant pour une introduction aux parties sémantiques de l'HTML5, <a href="05-sections.html">c'est par ici</a>.
+    </p>
+</body>
+</html>

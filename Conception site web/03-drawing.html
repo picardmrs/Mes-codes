@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessiner en CSS</title>
+    <style>
+        .rectangle {
+            width: 250px;
+            height: 150px;
+            border: 3px solid darkcyan
+        }
+
+        .carre {
+            /* Avec une variable */
+            --cote: 150px;
+            width: var(--cote);
+            height: var(--cote);
+            border: 2px solid darkred;
+
+            background-color: #bc8f8f;
+
+            &.arrondi {
+                border-radius: 25px;
+            }
+
+        }
+
+        .carre2{
+            width: 150px;
+            height: 150px;
+            border: 2px solid darkred;
+            background-color: #bc8f8f;
+            &.pointillé{
+                border-radius: 25px;;
+            }
+
+        }
+
+        .cercle {
+            --diametre: 150px;
+            --rayon: calc(var(--diametre) / 2);
+            width: var(--diametre);
+            height: var(--diametre);
+            border: 2px solid darkred;
+
+            border-radius: var(--rayon);
+            
+            background: linear-gradient(to right, green 50%, darkblue 50%);
+        }
+
+        .cercle2{
+            width :150px;
+            height : 150px;
+            border  : 2px solid darkred;
+            border-radius: 75px;
+            background: linear-gradient(to left, green 50%, blue 50%);
+        }
+
+        .tour{
+            --largeur-tour: 150px;
+            --hauteur-etage: 75px;
+            width: var(--largeur-tour);
+            border: 3px double gray;
+            .etage {
+                height: var(--hauteur-etage);
+
+                &.even {
+                    background-color: aquamarine;
+                }
+
+                &.odd {
+                    background-color: darkblue;
+                }
+            }
+        }
+        .carre-concave {
+            width: 200px;
+            height: 200px;
+            background: 
+                radial-gradient(circle at 0 0, transparent 20px, orange 20px) top left,
+                radial-gradient(circle at 100% 0%, transparent 20px, orange 20px) top right,
+                radial-gradient(circle at 0 100%, transparent 20px, orange 20px) bottom left,
+                radial-gradient(circle at 100% 100%, transparent 20px, orange 20px) bottom right;
+            background-size: 51% 51%;
+            background-repeat: no-repeat;
+        }
+        .carre-cotes-courbes {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            clip-path: path('M 0,100 Q 50,50 100,0 Q 150,50 200,100 Q 150,150 100,200 Q 50,150 0,100 Z');
+        }
+    </style>
+</head>
+<body>
+    <h1>Dessiner en CSS!</h1>
+    <section>
+        <h2>Les élèments de base</h2>
+        <p>Si une section se découpe en partie indépendantes, formant le tout de la section, il convient de les regrouper en `article`.</p>
+        <article>
+            <h3>Un rectangle</h3>
+            <div class="rectangle"></div>
+        </article>
+        <article>
+            <h3>Un carré</h3>
+            <div class="carre"></div>
+        </article>
+        <article>
+            <h3>Un 2 eme carré</h3>
+            <div class="carre2 pointillé"></div>
+        </article>
+        <article>
+            <h3>Un carré au bord arrondis</h3>
+            <div class="carre arrondi"></div>
+        </article>
+        <article>
+            <h3>Un cercle</h3>
+            <div class="cercle"></div>
+        </article>
+        <article>
+            <h3>Un 2 eme cercle</h3>
+            <div class="cercle2"></div>
+        </article>
+        <section>
+            <h2>Composition d'élèments</h2>
+            <article>
+                <h3>Une tour à étages</h3>
+                <div class="tour">
+                    <div class="etage even"></div>
+                    <div class="etage odd"></div>
+                    <div class="etage even"></div>
+                    <div class="etage odd"></div>
+                    <div class="etage even"></div>
+                </div>
+                <div class="carre-concave"></div>
+                   <div class="carre-cotes-courbes"></div>
+
+            </article>
+            <article>
+                <h3>L'orange</h3>
+                <p>Pour savoir <em style="font-style:italic">qui a volé l'orange du marchand</em>, rendez-vous sur <a href="04-orange.html" rel="next">la page dédiée</a>.</p>
+            </article>
+        </section>
+    </section>
+    
+</body>
+</html>

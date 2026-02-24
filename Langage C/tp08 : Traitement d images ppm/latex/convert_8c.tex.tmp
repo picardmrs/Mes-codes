@@ -1,0 +1,47 @@
+\doxysection{src/convert.c File Reference}
+\hypertarget{convert_8c}{}\label{convert_8c}\index{src/convert.c@{src/convert.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include "{}image.\+h"{}}\newline
+{\ttfamily \#include "{}convert.\+h"{}}\newline
+Include dependency graph for convert.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{convert_8c_af44f6c00cfe0fc095026fe2a0a7c6ad0}{convert\+\_\+\+P2\+\_\+to\+\_\+\+P5}} (\mbox{\hyperlink{structimage}{image}} img, char \texorpdfstring{$\ast$}{*}output\+\_\+file)
+\item 
+void \mbox{\hyperlink{convert_8c_ae5eba75a037c0d2e973f49ce719dd102}{convert\+\_\+\+P5\+\_\+to\+\_\+\+P2}} (\mbox{\hyperlink{structimage}{image}} img, char \texorpdfstring{$\ast$}{*}output\+\_\+file)
+\item 
+void \mbox{\hyperlink{convert_8c_ac0502646276a4e14fc352657d0475c6d}{convert\+\_\+\+P3\+\_\+to\+\_\+\+P6}} (\mbox{\hyperlink{structimage}{image}} img, char \texorpdfstring{$\ast$}{*}output\+\_\+file)
+\item 
+void \mbox{\hyperlink{convert_8c_a06927f9b1eedbdd97bead2662ab246ea}{convert\+\_\+\+P6\+\_\+to\+\_\+\+P3}} (\mbox{\hyperlink{structimage}{image}} img, char \texorpdfstring{$\ast$}{*}output\+\_\+file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{convert_8c_af44f6c00cfe0fc095026fe2a0a7c6ad0}\label{convert_8c_af44f6c00cfe0fc095026fe2a0a7c6ad0} 
+\index{convert.c@{convert.c}!convert\_P2\_to\_P5@{convert\_P2\_to\_P5}}
+\index{convert\_P2\_to\_P5@{convert\_P2\_to\_P5}!convert.c@{convert.c}}
+\doxysubsubsection{\texorpdfstring{convert\_P2\_to\_P5()}{convert\_P2\_to\_P5()}}
+{\footnotesize\ttfamily void convert\+\_\+\+P2\+\_\+to\+\_\+\+P5 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structimage}{image}}}]{img,  }\item[{char \texorpdfstring{$\ast$}{*}}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+\Hypertarget{convert_8c_ac0502646276a4e14fc352657d0475c6d}\label{convert_8c_ac0502646276a4e14fc352657d0475c6d} 
+\index{convert.c@{convert.c}!convert\_P3\_to\_P6@{convert\_P3\_to\_P6}}
+\index{convert\_P3\_to\_P6@{convert\_P3\_to\_P6}!convert.c@{convert.c}}
+\doxysubsubsection{\texorpdfstring{convert\_P3\_to\_P6()}{convert\_P3\_to\_P6()}}
+{\footnotesize\ttfamily void convert\+\_\+\+P3\+\_\+to\+\_\+\+P6 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structimage}{image}}}]{img,  }\item[{char \texorpdfstring{$\ast$}{*}}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+\Hypertarget{convert_8c_ae5eba75a037c0d2e973f49ce719dd102}\label{convert_8c_ae5eba75a037c0d2e973f49ce719dd102} 
+\index{convert.c@{convert.c}!convert\_P5\_to\_P2@{convert\_P5\_to\_P2}}
+\index{convert\_P5\_to\_P2@{convert\_P5\_to\_P2}!convert.c@{convert.c}}
+\doxysubsubsection{\texorpdfstring{convert\_P5\_to\_P2()}{convert\_P5\_to\_P2()}}
+{\footnotesize\ttfamily void convert\+\_\+\+P5\+\_\+to\+\_\+\+P2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structimage}{image}}}]{img,  }\item[{char \texorpdfstring{$\ast$}{*}}]{output\+\_\+file }\end{DoxyParamCaption})}
+
+\Hypertarget{convert_8c_a06927f9b1eedbdd97bead2662ab246ea}\label{convert_8c_a06927f9b1eedbdd97bead2662ab246ea} 
+\index{convert.c@{convert.c}!convert\_P6\_to\_P3@{convert\_P6\_to\_P3}}
+\index{convert\_P6\_to\_P3@{convert\_P6\_to\_P3}!convert.c@{convert.c}}
+\doxysubsubsection{\texorpdfstring{convert\_P6\_to\_P3()}{convert\_P6\_to\_P3()}}
+{\footnotesize\ttfamily void convert\+\_\+\+P6\+\_\+to\+\_\+\+P3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structimage}{image}}}]{img,  }\item[{char \texorpdfstring{$\ast$}{*}}]{output\+\_\+file }\end{DoxyParamCaption})}
+

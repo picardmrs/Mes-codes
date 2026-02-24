@@ -1,0 +1,48 @@
+\doxysection{src/transformations.c File Reference}
+\hypertarget{transformations_8c}{}\label{transformations_8c}\index{src/transformations.c@{src/transformations.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include "{}transformations.\+h"{}}\newline
+{\ttfamily \#include "{}image.\+h"{}}\newline
+Include dependency graph for transformations.\+c\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{transformations_8c_affc16c113828302e9c7962ba0f9f2070}{appliquer\+\_\+filtre}} (\mbox{\hyperlink{structimage}{image}} img, int x\+\_\+min, int y\+\_\+min, int x\+\_\+max, int y\+\_\+max, double matrice\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}, double diviseur)
+\item 
+void \mbox{\hyperlink{transformations_8c_acae6c6523f61a89dd0f81caa275db11a}{seuillage}} (int val, char \texorpdfstring{$\ast$}{*}img\+\_\+entree, char \texorpdfstring{$\ast$}{*}img\+\_\+sortie, int \texorpdfstring{$\ast$}{*}sup\+\_\+gauche, int \texorpdfstring{$\ast$}{*}inf\+\_\+droit)
+\item 
+void \mbox{\hyperlink{transformations_8c_ab95621a2ad143c92ba22c4076880d4b7}{gradient}} (char \texorpdfstring{$\ast$}{*}img\+\_\+entree, char \texorpdfstring{$\ast$}{*}img\+\_\+sortie, int \texorpdfstring{$\ast$}{*}sup\+\_\+gauche, int \texorpdfstring{$\ast$}{*}inf\+\_\+droit)
+\item 
+void \mbox{\hyperlink{transformations_8c_a024b754cd41507fae512961cd3795cef}{lissage}} (char \texorpdfstring{$\ast$}{*}img\+\_\+entree, char \texorpdfstring{$\ast$}{*}img\+\_\+sortie, int \texorpdfstring{$\ast$}{*}sup\+\_\+gauche, int \texorpdfstring{$\ast$}{*}inf\+\_\+droit)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{transformations_8c_affc16c113828302e9c7962ba0f9f2070}\label{transformations_8c_affc16c113828302e9c7962ba0f9f2070} 
+\index{transformations.c@{transformations.c}!appliquer\_filtre@{appliquer\_filtre}}
+\index{appliquer\_filtre@{appliquer\_filtre}!transformations.c@{transformations.c}}
+\doxysubsubsection{\texorpdfstring{appliquer\_filtre()}{appliquer\_filtre()}}
+{\footnotesize\ttfamily void appliquer\+\_\+filtre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structimage}{image}}}]{img,  }\item[{int}]{x\+\_\+min,  }\item[{int}]{y\+\_\+min,  }\item[{int}]{x\+\_\+max,  }\item[{int}]{y\+\_\+max,  }\item[{double}]{matrice\mbox{[}3\mbox{]}\mbox{[}3\mbox{]},  }\item[{double}]{diviseur }\end{DoxyParamCaption})}
+
+\Hypertarget{transformations_8c_ab95621a2ad143c92ba22c4076880d4b7}\label{transformations_8c_ab95621a2ad143c92ba22c4076880d4b7} 
+\index{transformations.c@{transformations.c}!gradient@{gradient}}
+\index{gradient@{gradient}!transformations.c@{transformations.c}}
+\doxysubsubsection{\texorpdfstring{gradient()}{gradient()}}
+{\footnotesize\ttfamily void gradient (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{img\+\_\+entree,  }\item[{char \texorpdfstring{$\ast$}{*}}]{img\+\_\+sortie,  }\item[{int \texorpdfstring{$\ast$}{*}}]{sup\+\_\+gauche,  }\item[{int \texorpdfstring{$\ast$}{*}}]{inf\+\_\+droit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{transformations_8c_a024b754cd41507fae512961cd3795cef}\label{transformations_8c_a024b754cd41507fae512961cd3795cef} 
+\index{transformations.c@{transformations.c}!lissage@{lissage}}
+\index{lissage@{lissage}!transformations.c@{transformations.c}}
+\doxysubsubsection{\texorpdfstring{lissage()}{lissage()}}
+{\footnotesize\ttfamily void lissage (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{img\+\_\+entree,  }\item[{char \texorpdfstring{$\ast$}{*}}]{img\+\_\+sortie,  }\item[{int \texorpdfstring{$\ast$}{*}}]{sup\+\_\+gauche,  }\item[{int \texorpdfstring{$\ast$}{*}}]{inf\+\_\+droit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{transformations_8c_acae6c6523f61a89dd0f81caa275db11a}\label{transformations_8c_acae6c6523f61a89dd0f81caa275db11a} 
+\index{transformations.c@{transformations.c}!seuillage@{seuillage}}
+\index{seuillage@{seuillage}!transformations.c@{transformations.c}}
+\doxysubsubsection{\texorpdfstring{seuillage()}{seuillage()}}
+{\footnotesize\ttfamily void seuillage (\begin{DoxyParamCaption}\item[{int}]{val,  }\item[{char \texorpdfstring{$\ast$}{*}}]{img\+\_\+entree,  }\item[{char \texorpdfstring{$\ast$}{*}}]{img\+\_\+sortie,  }\item[{int \texorpdfstring{$\ast$}{*}}]{sup\+\_\+gauche,  }\item[{int \texorpdfstring{$\ast$}{*}}]{inf\+\_\+droit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+

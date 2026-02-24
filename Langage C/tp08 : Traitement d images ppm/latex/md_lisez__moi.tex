@@ -1,0 +1,20 @@
+\chapter{TP08 -\/ Traitement d\textquotesingle{}images PPM}
+\hypertarget{md_lisez__moi}{}\label{md_lisez__moi}\index{TP08 -\/ Traitement d\textquotesingle{}images PPM@{TP08 -\/ Traitement d\textquotesingle{}images PPM}}
+\label{md_lisez__moi_autotoc_md0}%
+\Hypertarget{md_lisez__moi_autotoc_md0}%
+ \hypertarget{md_lisez__moi_autotoc_md1}{}\doxysection{\texorpdfstring{Project description}{Project description}}\label{md_lisez__moi_autotoc_md1}
+This project is in 2 part \+: ~\newline
+ The first one can be execute with ./prog.bin you have an access to a menu with fonctionnalities. This functionnalities permet to load an image an create a new version in an oteher dimension binary or ascii of the image load. ~\newline
+ The second one can be execut with ./prog2.bin and you can execute by following the next indication some filtrage on your iimages \+:\hypertarget{md_lisez__moi_autotoc_md2}{}\doxysubsection{\texorpdfstring{1. Seuillage}{1. Seuillage}}\label{md_lisez__moi_autotoc_md2}
+Execute with \+: seuillage value input\+\_\+img output\+\_\+img x\+\_\+min y\+\_\+min x\+\_\+max y\+\_\+max ~\newline
+
+
+This function remplace pixel by black pixel if the average value of RGB is under a value. The value is choose by the user. The 3 coefficient before RGB are a pourcentages of what an human distinct of R and G and B.\hypertarget{md_lisez__moi_autotoc_md3}{}\doxysubsection{\texorpdfstring{2. Gradient}{2. Gradient}}\label{md_lisez__moi_autotoc_md3}
+Execute with \+: gradient input\+\_\+img output\+\_\+img x\+\_\+min y\+\_\+min x\+\_\+max y\+\_\+max ~\newline
+
+
+The gradient made the image gray. I have calculed horizontal and verticl gradient with subject formule and after the norme.\hypertarget{md_lisez__moi_autotoc_md4}{}\doxysubsection{\texorpdfstring{3. Lissage}{3. Lissage}}\label{md_lisez__moi_autotoc_md4}
+Execute with \+: lissage input\+\_\+img output\+\_\+img x\+\_\+min y\+\_\+min x\+\_\+max y\+\_\+max ~\newline
+
+
+The lissage made a convolution with matrice 3\texorpdfstring{$\ast$}{*}3 and calculate the average of the 9 pixels and after we divided by 9. It create an image with more blur. 
