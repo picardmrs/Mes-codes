@@ -5,5 +5,5 @@
 TPE histogramme/.git.bak/
 
 # Build outputs
-TPE histogramme/bin/
+TPE histogramme/bin/test.bin
 *.dSYM/
