@@ -1,0 +1,5 @@
+# macOS metadata
+.DS_Store
+
+# Avoid committing nested git metadata
+TPE histogramme/.git.bak/
