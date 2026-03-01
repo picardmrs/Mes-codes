@@ -3,3 +3,7 @@
 
 # Avoid committing nested git metadata
 TPE histogramme/.git.bak/
+
+# Build outputs
+TPE histogramme/bin/
+*.dSYM/
