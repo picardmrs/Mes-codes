@@ -1,0 +1,15 @@
+Explication du programme :
+
+class Entier définit :
+-le type Entier à partir d'un nombre n
+-le constructeur incr qui permet d'augmenter la valeur d'un nombre de 1
+- le construvcteur imprime qui print le nombre avec un saut de ligne
+
+ensuite TestEntier contient un main qui :
+- définit un entier n1 et lui dopnne la valeur 2 puis écris n1 = 2
+- il fait la même chose pour l'entier n2 qui prend la valeur 5
+- on augmente de 3 l'entier n1 et on écrit n1 = "la val de n1"
+- on écris n1 == n2 True  ou n1 == n2 False en fonction de si n1 et n2 sont égaux
+- il attribut à n1 la valeur de n2
+- il augmente de 12 la valeur de n2 puis indique sa valeur et réindique la valeur de n1
+- il test à nouveau si n1 est égale à n2 et l'indique si c est le cas
